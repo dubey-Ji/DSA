@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr1 = [1, 4, 2, 5, 3];
+      let arr3 = new Array();
+      for (let i = 0; i < arr1.length; i++) {
+        for (let j = i; j < arr1.length; j++) {
+          let arr2 = new Array();
+          for (let k = i; k <= j; k++) {
+            arr2.push(arr1[k]);
+          }
+          document.write(arr2 + " And it's length " + arr2.length);
+          document.write("<br>");
+          if (arr2.length % 2 != 0) {
+            let sum = 0;
+            for (let counter = 0; counter < arr2.length; counter++) {
+              sum = sum + arr2[counter];
+            }
+            arr3.push(sum);
+          }
+        }
+      }
+      document.write("Arr3: " + arr3);
+      let sum = 0;
+      for (let counter = 0; counter < arr3.length; counter++) {
+        sum = sum + arr3[counter];
+      }
+      document.write("Final sum: " + sum);
+    </script>
+  </body>
+</html>

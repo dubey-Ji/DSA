@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sub Array</title>
+  </head>
+  <body>
+    <script>
+      let arr = [3, 2, 4];
+      let tmp;
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+          for (let k = i; k <= j; k++)
+            if(j > i) {
+              tmp = arr[k];
+            }
+            document.write(arr[k]);
+          }
+          document.write("<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

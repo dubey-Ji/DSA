@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [
+        [1, 2, 3],
+        [2, 3, 4],
+        [3, 4, 5],
+      ];
+      let newArr = new Array();
+      for (let i = 0; i < arr.length; i++) {
+        let sum = 0;
+        for (let j = 0; j < arr[i].length; j++) {
+          document.write(arr[i][j]);
+          sum = sum + arr[i][j];
+        }
+        newArr.push(sum);
+        document.write("<br>");
+      }
+      document.write(newArr);
+      document.write("<br>");
+      document.write(Math.max(...newArr));
+    </script>
+  </body>
+</html>
